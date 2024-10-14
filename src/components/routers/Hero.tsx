@@ -1,7 +1,11 @@
+"use client"
 import React from 'react'
 import Spline from '@splinetool/react-spline/next';
+import { redirect } from 'next/navigation'
+import GetStartedButton from '../ui/MainButton';
 
 const Hero = () => {
+  
   return (
     <div className='w-full flex lg:h-[85vh] md:h-[130vh] sm:h-[120vh]  bg-black flex-col lg:flex-row  '>
       <div className='lg:w-[45%] lg:h-full sm:h-[36%] h-[350px]    lg:ps-14 lg:pt-24 flex items-center lg:pb-72  '>
@@ -18,10 +22,7 @@ const Hero = () => {
                 Empower your vision with cutting-edge technology. Experience unparalleled performance, ironclad security, and stellar support.
               </p>
               <div className="flex flex-col space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0 m-auto">
-                <button className="bg-blue-600 px-6 py-3 text-white hover:bg-blue-700 rounded " >
-                  Get Started
-
-                </button>
+                <GetStartedButton />
 
               </div>
             </div>
