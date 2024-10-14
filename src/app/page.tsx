@@ -10,7 +10,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ServicesSemi />
+      <div className='mt-14'>
+        <ServicesSemi />
+      </div>
       <MasterTechnologes />
       <CustomerOnboarding />
       <Impact />

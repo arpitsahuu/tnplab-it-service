@@ -7,7 +7,7 @@ const AboutInfo = () => {
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div>
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          About <span className="text-blue-500">tnpLab</span>
+          About <span className="text-blue-500">tnp<span className='text-[#ffc95c]'>Lab</span> </span>
         </h1>
         <p className="text-lg text-gray-300 mb-8">
           At tnpLab, we&apos;re passionate about transforming innovative ideas into digital realities. Our team of experts combines cutting-edge technology with creative solutions to empower businesses in the digital age.

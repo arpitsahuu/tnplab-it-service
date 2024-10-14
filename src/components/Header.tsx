@@ -147,7 +147,8 @@ const Navbarnew = () => {
                                         ) : (
                                             <Link href={link.href} legacyBehavior passHref>
                                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                                    {link.title}
+                                                    { link.title !== "Why tnpLab"? link.title : <span>Why {" "}<span className="text-[#2f7aeb]">tnp</span><span className="text-[#ffc95c]">Lab</span></span>}
+                                                  
                                                 </NavigationMenuLink>
                                             </Link>
                                         )}

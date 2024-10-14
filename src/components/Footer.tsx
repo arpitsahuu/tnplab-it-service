@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     <div>
-                        <h3 className="text-lg font-semibold mb-4 text-gray-200">About tnpLab</h3>
+                        <h3 className="text-lg font-semibold mb-4 text-gray-200">About <span className="text-blue-500">tnp<span className='text-[#ffc95c]'>Lab</span> </span></h3>
                         <p className="text-gray-400">Empowering businesses with cutting-edge technology solutions since 2010.</p>
                     </div>
                     <div>

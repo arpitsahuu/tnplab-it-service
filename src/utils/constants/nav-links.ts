@@ -38,7 +38,7 @@ export const NAV_LINKS = [
     },
     
         {
-            title: "Why lnpLap",
+            title: "Why tnpLab",
             href: "/why",
         },
 
@@ -61,7 +61,7 @@ export const NAV_LINKS = [
     //     ]
     // },
     {
-        title: "Contactu Us",
+        title: "Contact Us",
         href: "/contact",
     },
 ];

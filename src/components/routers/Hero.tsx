@@ -1,11 +1,10 @@
 "use client"
 import React from 'react'
 import Spline from '@splinetool/react-spline/next';
-import { redirect } from 'next/navigation'
 import GetStartedButton from '../ui/MainButton';
 
 const Hero = () => {
-  
+
   return (
     <div className='w-full flex lg:h-[85vh] md:h-[130vh] sm:h-[120vh]  bg-black flex-col lg:flex-row  '>
       <div className='lg:w-[45%] lg:h-full sm:h-[36%] h-[350px]    lg:ps-14 lg:pt-24 flex items-center lg:pb-72  '>
@@ -32,9 +31,9 @@ const Hero = () => {
 
       <div className="lg:w-[55%] w-full lg:h-full md:h-[500px] h-[320px]   flex justify-center items-center ">
         <div className="relative w-[500px] h-[550px] sm: flex items-center justify-center overflow-hidden  md:overflow-visible " >
-        <Spline className='w-[750px] h-[700px] lg:scale-[0.80] xl:scale-[1.40] md:scale-[0.70] sm:scale-[0.35] scale-[0.60]  '
-              scene="https://prod.spline.design/AytvQmZ1V7RFdW2j/scene.splinecode"
-            />
+          <Spline className='w-[750px] h-[700px] lg:scale-[0.80] xl:scale-[1.40] md:scale-[0.70] sm:scale-[0.35] scale-[0.60]  '
+            scene="https://prod.spline.design/AytvQmZ1V7RFdW2j/scene.splinecode"
+          />
           <main className='relative '>
             {/* <Spline
               scene="https://prod.spline.design/AytvQmZ1V7RFdW2j/scene.splinecode"
