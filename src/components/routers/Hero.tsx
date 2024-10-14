@@ -31,13 +31,19 @@ const Hero = () => {
 
       <div className="lg:w-[55%] w-full lg:h-full md:h-[500px] h-[300px]   flex justify-center items-center ">
         <div className="relative w-[500px] h-[550px] sm: flex items-center justify-center overflow-hidden  md:overflow-visible " >
-          <main className='relative t'>
-            <Spline
+        <Spline className='w-[750px] h-[700px] lg:scale-[0.80] xl:scale-[1.40] md:scale-[0.70] sm:scale-[0.35] scale-[0.60]  '
+              scene="https://prod.spline.design/AytvQmZ1V7RFdW2j/scene.splinecode"
+            />
+          <main className='relative '>
+            {/* <Spline
               scene="https://prod.spline.design/AytvQmZ1V7RFdW2j/scene.splinecode"
               className='w-[750px] h-[700px] lg:scale-[0.80] xl:scale-[0.95] md:scale-[0.70] sm:scale-[0.35] scale-[0.30]  '
-            />
-            <div className=' xl:h-14 lg:h-10 xl:w-[200px] lg:w-[140px] lg:right-14 lg:bottom-20 bg-black absolute xl:bottom-5 xl:right-8 z-10 md:bottom-28 md:right-28  bottom-0 right-0 h-10 w-[100px]'></div>
-            <div className='lg:hidden block absolute w-full h-full top-0 left-0'></div>
+            /> */}
+            {/* <Spline className='w-[750px] h-[700px] lg:scale-[0.80] xl:scale-[0.95] md:scale-[0.70] sm:scale-[0.35] scale-[0.30]  '
+              scene="https://prod.spline.design/AytvQmZ1V7RFdW2j/scene.splinecode"
+            /> */}
+            <div className=' xl:h-14 lg:h-10 xl:w-[200px] lg:w-[140px] lg:right-14 lg:bottom-[-200px] md:bottom-[-185px] md:right-20 bg-black absolute xl:bottom-[-360px] xl:right-[-70px] z-10   bottom-[-160px] right-20 h-10 w-[100px]'></div>
+            {/* <div className=' lg:w-0 lg:h-0 z-10 bg-green-500 absolute w-full h-full top-0 left-0'></div> */}
           </main>
 
 
