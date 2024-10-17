@@ -10,17 +10,19 @@ import {
 } from "./ui/navigation-menu";
 import { cn } from "../utils/functions/cn";
 import { NAV_LINKS } from "../utils/constants/nav-links";
-import { LucideIcon} from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from "./globel/max-width-wrapper";
 import MobileNavbar from "./mobile-navbar";
 import AnimationContainer from "./globel/animation-container";
+import { usePathname } from "next/navigation";
 
 
 const Navbarnew = () => {
 
     const [scroll, setScroll] = useState(false);
+    const pathname = usePathname();
 
     const handleScroll = () => {
         if (window.scrollY > 8) {
@@ -146,9 +148,9 @@ const Navbarnew = () => {
                                             </>
                                         ) : (
                                             <Link href={link.href} legacyBehavior passHref>
-                                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                                    { link.title !== "Why tnpLab"? link.title : <span>Why {" "}<span className="text-[#2f7aeb]">tnp</span><span className="text-[#ffc95c]">Lab</span></span>}
-                                                  
+                                                <NavigationMenuLink className={`${navigationMenuTriggerStyle()}  `}>
+                                                    {link.title !== "Why tnpLab" ? link.title : <span>Why {" "}<span className="text-[#2f7aeb]">tnp</span><span className="text-[#ffc95c]">Lab</span></span>}
+
                                                 </NavigationMenuLink>
                                             </Link>
                                         )}

@@ -18,7 +18,7 @@ const Page = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ContactUsForm />
-          {/* <ContactInfo /> */}
+          <ContactInfo />
         </div>
 
         <div className="mt-16 bg-gray-900 rounded-lg p-8 shadow-lg">

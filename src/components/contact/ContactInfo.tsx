@@ -1,12 +1,14 @@
+"use client"
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin} from 'lucide-react';
+import Faq from '../faq/Faq';
 
 const ContactInfo = () => {
     return (
         <>
             <motion.div
-                className="bg-gray-800 bg-opacity-50 p-8 rounded-lg shadow-lg backdrop-filter backdrop-blur-sm"
+                className="bg-gray-900 bg-opacity-50 p-8 rounded-lg shadow-lg backdrop-filter backdrop-blur-sm"
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
@@ -17,12 +19,12 @@ const ContactInfo = () => {
                         {
                             icon: <Mail className="flex-shrink-0 h-6 w-6 text-blue-400 mr-4" />,
                             title: 'Email',
-                            info: 'info@tnplab.com',
+                            info: <a href="mailto:contact@tnplab.in?subject=Let's%20Work%20Together" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">contact@tnplab.in</a>,
                         },
                         {
                             icon: <Phone className="flex-shrink-0 h-6 w-6 text-blue-400 mr-4" />,
                             title: 'Phone',
-                            info: '+1 (555) 123-4567',
+                            info: <a href="tel:+919244107733" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">+91-9244107733</a>,
                         },
                         {
                             icon: <MapPin className="flex-shrink-0 h-6 w-6 text-blue-400 mr-4" />,
@@ -54,7 +56,7 @@ const ContactInfo = () => {
                         ].map(({ name, href, icon }) => (
                             <a
                                 key={name}
-                                href={href}
+                                href={"/"}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-blue-400 hover:text-blue-300 transition duration-200"
@@ -66,6 +68,7 @@ const ContactInfo = () => {
                     </div>
                 </div>
             </motion.div>
+           
         </>
     );
 };

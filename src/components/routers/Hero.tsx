@@ -1,9 +1,12 @@
-"use client"
 import React from 'react'
-import Spline from '@splinetool/react-spline/next';
 import GetStartedButton from '../ui/MainButton';
+import dynamic from 'next/dynamic';;
 
 const Hero = () => {
+  const SplineComponet = dynamic(
+    () => import('@/components/ui/Spline'), {
+    loading: () => <h3 className='text-gray-400 '>Loading Logo ...</h3>,
+  });
 
   return (
     <div className='w-full flex lg:h-[85vh] md:h-[130vh] sm:h-[120vh]  bg-black flex-col lg:flex-row  '>
@@ -22,7 +25,6 @@ const Hero = () => {
               </p>
               <div className="flex flex-col space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0 m-auto">
                 <GetStartedButton />
-
               </div>
             </div>
           </div>
@@ -31,9 +33,10 @@ const Hero = () => {
 
       <div className="lg:w-[55%] w-full lg:h-full md:h-[500px] h-[320px]   flex justify-center items-center ">
         <div className="relative w-[500px] h-[550px] sm: flex items-center justify-center overflow-hidden  md:overflow-visible " >
-          <Spline className='w-[750px] h-[700px] lg:scale-[0.80] xl:scale-[1.40] md:scale-[0.70] sm:scale-[0.35] scale-[0.60]  '
+          {/* <Spline className='w-[750px] h-[700px] lg:scale-[0.80] xl:scale-[1.40] md:scale-[0.70] sm:scale-[0.35] scale-[0.60]  '
             scene="https://prod.spline.design/AytvQmZ1V7RFdW2j/scene.splinecode"
-          />
+          /> */}
+          <SplineComponet />
           <main className='relative '>
             {/* <Spline
               scene="https://prod.spline.design/AytvQmZ1V7RFdW2j/scene.splinecode"
@@ -45,6 +48,7 @@ const Hero = () => {
             <div className=' xl:h-14 lg:h-10 xl:w-[200px] lg:w-[140px] lg:right-14 lg:bottom-[-200px] md:bottom-[-185px] md:right-20 bg-black absolute xl:bottom-[-360px] xl:right-[-70px] z-10   bottom-[-160px] right-20 h-10 w-[100px]'></div>
             {/* <div className=' lg:w-0 lg:h-0 z-10 bg-green-500 absolute w-full h-full top-0 left-0'></div> */}
           </main>
+            <div className=' bg-green-700 absolute top-28 bottom-0 h-[90%] w-full sm:h-1 sm:w-1 '></div>
 
 
 

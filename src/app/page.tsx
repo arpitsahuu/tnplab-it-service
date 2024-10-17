@@ -1,9 +1,20 @@
 import Hero from '@/components/routers/Hero';
-import MasterTechnologes from '@/components/routers/MasterTechnologes';
-import CustomerOnboarding from '@/components/routers/Onbord';
 import { Industrys } from '@/components/about/Industrys';
-import ServicesSemi from '@/components/routers/ServiceSemi';
 import Impact from '@/components/routers/Impact';
+import dynamic from "next/dynamic";
+
+const ServicesSemi = dynamic(
+  () => import('@/components/routers/ServiceSemi'),
+)
+const MasterTechnologes = dynamic(
+  () => import('@/components/routers/MasterTechnologes'),
+)
+
+const CustomerOnboarding = dynamic(
+  () => import('@/components/routers/Onbord'),
+)
+
+
 
 export default function Home() {
 
