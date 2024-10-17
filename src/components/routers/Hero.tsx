@@ -48,7 +48,7 @@ const Hero = () => {
             <div className=' xl:h-14 lg:h-10 xl:w-[200px] lg:w-[140px] lg:right-14 lg:bottom-[-200px] md:bottom-[-185px] md:right-20 bg-black absolute xl:bottom-[-360px] xl:right-[-70px] z-10   bottom-[-160px] right-20 h-10 w-[100px]'></div>
             {/* <div className=' lg:w-0 lg:h-0 z-10 bg-green-500 absolute w-full h-full top-0 left-0'></div> */}
           </main>
-            <div className=' bg-green-700 absolute top-28 bottom-0 h-[90%] w-full sm:h-1 sm:w-1 '></div>
+            <div className=' bg-transparent absolute top-28 bottom-0 h-[90%] w-full sm:h-1 sm:w-1 '></div>
 
 
 
