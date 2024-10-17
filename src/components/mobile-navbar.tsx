@@ -32,21 +32,21 @@ const MobileNavbar = () => {
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
                     <Button size="icon" variant="ghost">
-                        <Menu className="w-5 h-5" />
+                        {!isOpen && (
+                            
+                        <Menu className="w-5 h-5" /> 
+                        )}
                     </Button>
                 </SheetTrigger>
                 <SheetContent className="w-screen ">
                     <SheetClose asChild className="absolute top-3 right-5 bg-background z-20 flex items-center justify-center">
-                        <Button size="icon" variant="ghost" className="text-neutral-600">
+                        <Button size="icon" variant="ghost" className="text-neutral-600  ">
                             <X className="w-5 h-5" />
                         </Button>
                     </SheetClose>
                     <div className="flex flex-col items-start w-full py-2 mt-10">
                         <div className="flex items-center justify-evenly w-full space-x-2">
-
-                                <Link href="/dashboard" className={buttonVariants({ variant: "outline", className: "w-full" })}>
-                                    Dashboard
-                                </Link>
+/
 
 
                         </div>

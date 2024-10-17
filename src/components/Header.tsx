@@ -46,7 +46,7 @@ const Navbarnew = () => {
         )}>
             <AnimationContainer reverse delay={0.1} className="size-full ">
                 <MaxWidthWrapper className="flex items-center justify-between  ">
-                    <div className=" w-full flex items-center justify-between  space-x-12 ">
+                    <div className="  w-full flex items-center justify-between  space-x-12 ">
                         <Link href="/">
                             <svg
                                 width="230"
