@@ -45,11 +45,7 @@ const MobileNavbar = () => {
                         </Button>
                     </SheetClose>
                     <div className="flex flex-col items-start w-full py-2 mt-10">
-                        <div className="flex items-center justify-evenly w-full space-x-2">
-/
-
-
-                        </div>
+                       
                         <ul className="flex flex-col items-start w-full mt-6">
                             <Accordion type="single" collapsible className="!w-full">
                                 {NAV_LINKS.map((link) => (
